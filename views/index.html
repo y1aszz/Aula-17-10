@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>API - Users</title>
+</head>
+
+<body>
+    <h1>API Endpoints Documentation</h1>
+    
+    <div class="endpoint">
+        <h2>Create User</h2>
+        <p>This endpoint is used to create a new user in the system.</p>
+        <p>
+            Endpoint: POST /user
+            Parameters:
+            - name (string): The name of the user.
+            - password (string): The user's password.
+            - email (string): The user's email address.
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>Find User</h2>
+        <p>This endpoint is used to retrieve information about a specific user by their ID.</p>
+        <p>
+            Endpoint: GET /user/:id
+            Parameters:
+            - id (integer): The unique ID of the user to retrieve.
+        </p>
+    </div>
+    
+    <div class="endpoint">
+        <h2>Find Users</h2>
+        <p>This endpoint is used to retrieve a list of all users in the system.</p>
+        <p>
+            Endpoint: GET /users
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>Delete User</h2>
+        <p>This endpoint is used to delete a specific user by their ID.</p>
+        <p>
+            Endpoint: DELETE /user/:id
+            Parameters:
+            - id (integer): The unique ID of the user to delete.
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>Update User</h2>
+        <p>This endpoint is used to update information about a specific user by their ID.</p>
+        <p>
+            Endpoint: PUT /user/:id
+            Parameters:
+            - id (integer): The unique ID of the user to update.
+            - name (string): The new name of the user.
+            - password (string): The new password of the user.
+            - email (string): The new email address of the user.
+        </p>
+    </div>
+
+    <div class="endpoint">
+        <h2>Authenticate User</h2>
+        <p>This endpoint is used to authenticate a user by email and password and receive a JSON Web Token (JWT) for authorization.</p>
+        <p>
+            Endpoint: POST /user/authenticate
+            Parameters:
+            - email (string): The user's email address.
+            - password (string): The user's password.
+        </p>
+    </div>
+</body>
+
+</html>
